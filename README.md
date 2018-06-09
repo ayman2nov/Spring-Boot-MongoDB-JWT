@@ -37,3 +37,7 @@ public void doFilter(ServletRequest request, ServletResponse response, FilterCha
 } 
 ```
 And some services for [Token creation](https://github.com/vlsidlyarevich/Spring-Boot-MongoDB-JWT/blob/master/src/main/java/com/github/vlsidlyarevich/security/service/impl/TokenServiceImpl.java) and [Token verification](https://github.com/vlsidlyarevich/Spring-Boot-MongoDB-JWT/blob/master/src/main/java/com/github/vlsidlyarevich/security/service/impl/TokenAuthenticationServiceImpl.java). 
+
+
+[BUG] You need to modify the @Value("security.token.secret.key") to @Value("${security.token.secret.key}")
+
